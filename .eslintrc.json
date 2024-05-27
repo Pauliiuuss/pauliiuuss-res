@@ -1,7 +1,6 @@
 {
   "extends": ["next/core-web-vitals", "eslint:recommended", "next", "prettier"],
   "rules": {
-    "quotes": ["error", "single"],
     "no-duplicate-imports": "error",
     "no-self-compare": "error",
     "no-use-before-define": "error",
