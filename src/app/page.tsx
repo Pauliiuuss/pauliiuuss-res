@@ -13,7 +13,7 @@ export default function Home() {
       <AboutMe title="01. About me" id="about" />
       <Skills title="02. Skills" id="skills" />
       <ExEd data={experience} title="03. Experience" id="ex" />
-      <ExEd data={education} title="04. Education" lastCard id="ed" />
+      <ExEd data={education} title="04. Education" id="ed" />
       <Contact id={'contact'} />
       <Footer />
     </>
