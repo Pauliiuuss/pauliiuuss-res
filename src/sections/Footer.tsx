@@ -10,7 +10,7 @@ export const Footer = () => {
   return (
     <>
       <hr className="h-[2px] border-0 bg-og-black" />
-      <Card sx={'flex-row justify-between py-24'}>
+      <Card sx={'flex-row justify-between py-20'}>
         <div className="flex flex-row gap-24">
           <ul className="flex list-none flex-col gap-4">
             <li>

@@ -6,15 +6,13 @@ export const ExEd = ({
   data,
   title,
   id,
-  lastCard,
 }: {
   data: ExEdData[]
   title: string
   id: string
-  lastCard?: boolean
 }) => {
   return (
-    <CollapsableCard title={title} lastCard={lastCard} id={id}>
+    <CollapsableCard title={title} id={id}>
       {data.map((i) => {
         return (
           <div className="flex w-[60%] flex-col" key={i.name}>
