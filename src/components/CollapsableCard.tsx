@@ -17,9 +17,9 @@ export const CollapsableCard = ({
       )}
       id={id}
     >
-      <div className="sticky top-0">
+      <div className="sticky top-0 z-[5]">
         {title && (
-          <div className="z-100000 bg-og-black">
+          <div className="bg-og-black">
             <h2 className="px-64 py-12 text-8xl font-bold text-og-background">
               {title}
             </h2>

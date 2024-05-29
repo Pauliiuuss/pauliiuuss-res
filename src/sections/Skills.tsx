@@ -1,5 +1,6 @@
 'use client'
 
+import { motion } from 'framer-motion'
 import React, { useRef } from 'react'
 
 import { CollapsableCard } from '@/components/CollapsableCard'
@@ -14,49 +15,150 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
     }
   }
 
+  const handleMouseEnter = () => {
+    if (cursorRef.current) {
+      cursorRef.current.style.opacity = '10%'
+      cursorRef.current.style.height = '150px'
+      cursorRef.current.style.width = '150px'
+    }
+  }
+
+  const handleMouseLeave = () => {
+    if (cursorRef.current) {
+      cursorRef.current.style.opacity = '0%'
+      cursorRef.current.style.height = '0px'
+      cursorRef.current.style.width = '0px'
+    }
+  }
+
   return (
     <CollapsableCard title={title} id={id}>
-      <div className="flex flex-col gap-8" onMouseMove={handleMouseMove}>
+      <div className="flex flex-col gap-8">
         <div className="flex flex-row justify-center gap-72 pr-96">
-          <p className="text-5xl font-bold text-og-background">{'TAILWIND'}</p>
-          <p className="pt-5 text-5xl font-bold text-og-background">
+          <motion.p
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            onMouseEnter={handleMouseEnter}
+            whileHover={{ scale: [null, 1.5, 1.4] }}
+            transition={{ duration: 0.3 }}
+            className="cursor-none text-5xl font-bold text-og-background"
+          >
+            {'TAILWIND'}
+          </motion.p>
+          <motion.p
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            onMouseEnter={handleMouseEnter}
+            whileHover={{ scale: [null, 1.5, 1.4] }}
+            transition={{ duration: 0.3 }}
+            className="cursor-none pt-5 text-5xl font-bold text-og-background"
+          >
             {'REACT'}
-          </p>
+          </motion.p>
         </div>
         <div className="flex flex-row justify-center gap-72 pr-96">
-          <p className="text-3xl font-bold text-og-background">{'CSS'}</p>
-          <p className="text-8xl font-bold text-og-background">{'NEXTJS'}</p>
-          <p className="pt-16 text-3xl font-bold text-og-background">
+          <motion.p
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            onMouseEnter={handleMouseEnter}
+            whileHover={{ scale: [null, 1.5, 1.4] }}
+            transition={{ duration: 0.3 }}
+            className="cursor-none text-3xl font-bold text-og-background"
+          >
+            {'CSS'}
+          </motion.p>
+          <motion.p
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            onMouseEnter={handleMouseEnter}
+            whileHover={{ scale: [null, 1.5, 1.4] }}
+            transition={{ duration: 0.3 }}
+            className="cursor-none text-8xl font-bold text-og-background"
+          >
+            {'NEXTJS'}
+          </motion.p>
+          <motion.p
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            onMouseEnter={handleMouseEnter}
+            whileHover={{ scale: [null, 1.5, 1.4] }}
+            transition={{ duration: 0.3 }}
+            className="cursor-none pt-16 text-3xl font-bold text-og-background"
+          >
             {'HTML'}
-          </p>
+          </motion.p>
         </div>
-        <div className="flex justify-center pr-96">
-          <p className="pr-[450px] pt-8 text-5xl font-bold text-og-background">
+        <div className="flex justify-center pr-[800px]">
+          <motion.p
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            onMouseEnter={handleMouseEnter}
+            whileHover={{ scale: [null, 1.5, 1.4] }}
+            transition={{ duration: 0.3 }}
+            className="cursor-none pt-8 text-5xl font-bold text-og-background"
+          >
             {'TYPESCRIPT'}
-          </p>
+          </motion.p>
         </div>
         <div className="flex flex-row justify-center gap-40 pl-[400px]">
-          <p className=" pt-4 text-3xl font-bold text-og-background">
+          <motion.p
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            onMouseEnter={handleMouseEnter}
+            whileHover={{ scale: [null, 1.5, 1.4] }}
+            transition={{ duration: 0.3 }}
+            className=" cursor-none pt-4 text-3xl font-bold text-og-background"
+          >
             {'JAVASCRIPT'}
-          </p>
-          <p className="text-8xl font-bold text-og-background">{'GIT'}</p>
-          <p className="pt-10 text-3xl font-bold text-og-background">
+          </motion.p>
+          <motion.p
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            onMouseEnter={handleMouseEnter}
+            whileHover={{ scale: [null, 1.5, 1.4] }}
+            transition={{ duration: 0.3 }}
+            className="cursor-none text-8xl font-bold text-og-background"
+          >
+            {'GIT'}
+          </motion.p>
+          <motion.p
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            onMouseEnter={handleMouseEnter}
+            whileHover={{ scale: [null, 1.5, 1.4] }}
+            transition={{ duration: 0.3 }}
+            className="cursor-none pt-10 text-3xl font-bold text-og-background"
+          >
             {'JIRA'}
-          </p>
+          </motion.p>
         </div>
-        <div className="flex justify-center">
-          <p className="pl-32 pt-12 text-3xl font-bold text-og-background">
+        <div className="flex justify-center pl-32 pt-12">
+          <motion.p
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            onMouseEnter={handleMouseEnter}
+            whileHover={{ scale: [null, 1.5, 1.4] }}
+            transition={{ duration: 0.3 }}
+            className="cursor-none text-3xl font-bold text-og-background"
+          >
             {'MOBX'}
-          </p>
+          </motion.p>
         </div>
-        <div className="flex justify-center">
-          <p className="pl-[720px] text-5xl font-bold text-og-background">
+        <div className="flex justify-center pl-[720px]">
+          <motion.p
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            onMouseEnter={handleMouseEnter}
+            whileHover={{ scale: [null, 1.5, 1.4] }}
+            transition={{ duration: 0.3 }}
+            className="cursor-none text-5xl font-bold text-og-background"
+          >
             {'VERCEL'}
-          </p>
+          </motion.p>
         </div>
         <div
           ref={cursorRef}
-          className="pointer-events-none fixed z-[999999999] h-4 w-4 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-og-background"
+          className="transition-cursor pointer-events-none fixed -translate-x-1/2 -translate-y-1/2 rounded-full bg-og-background opacity-10 blur-sm duration-150 ease-out"
         ></div>
       </div>
     </CollapsableCard>
