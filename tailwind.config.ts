@@ -39,6 +39,9 @@ const config: Config = {
           'url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Image_gaussian_noise_example.png)',
         curves: "url('/curves.svg')",
       },
+      transitionProperty: {
+        cursor: 'height, width, opacity',
+      },
     },
   },
   plugins: [],
