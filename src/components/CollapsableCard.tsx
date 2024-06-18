@@ -20,14 +20,20 @@ export const CollapsableCard = ({
       <div className="sticky top-0 z-[5]">
         {title && (
           <div className="bg-og-black">
-            <h2 className="px-64 py-12 text-8xl font-bold text-og-background">
+            <h2 className="px-6 py-12 text-4xl font-bold text-og-background lg:px-64 lg:text-8xl">
               {title}
             </h2>
             <hr className="h-[2px] border-0 bg-og-background" />
           </div>
         )}
       </div>
-      <div className={'flex flex-col gap-44 px-64 py-44'}>{children}</div>
+      <div
+        className={
+          'flex flex-col gap-12 px-6 py-24 lg:gap-44 lg:px-64 lg:py-44'
+        }
+      >
+        {children}
+      </div>
     </div>
   )
 }

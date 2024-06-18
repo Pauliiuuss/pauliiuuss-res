@@ -6,6 +6,13 @@ export type ExEdData = {
   tools: string
 }
 
+export type SkillsData = {
+  name: string
+  yearsOfExperience: string
+  workplaces: { name: string; yearsOfExperience: string; usage: number }[]
+  offsetY?: string
+}
+
 export const experience: ExEdData[] = [
   {
     name: 'COINGATE',
@@ -35,3 +42,91 @@ export const education: ExEdData[] = [
     tools: 'Vocational Degree',
   },
 ]
+
+// export const skills: SkillsData[] = [
+//   {
+//     name: 'TAILWIND',
+//     yearsOfExperience: '6 months',
+//     workplaces: [{ name: 'COINGATE', yearsOfExperience: '6 months', usage: 3 }],
+//   },
+//   {
+//     name: 'REACT',
+//     yearsOfExperience: '3 years 3 months',
+//     workplaces: [
+//       { name: 'COINGATE', yearsOfExperience: '1 year 9 months', usage: 5 },
+//       { name: 'EIS', yearsOfExperience: '1 year 5 months', usage: 5 },
+//     ],+
+
+//   },
+//   {
+//     name: 'CSS',
+//     yearsOfExperience: '3 years 3 months',
+//     workplaces: [
+//       { name: 'COINGATE', yearsOfExperience: '1 year 9 months', usage: 3 },
+//       { name: 'EIS', yearsOfExperience: '1 year 5 months', usage: 5 },
+//     ],
+//   },
+//   {
+//     name: 'NEXTJS',
+//     yearsOfExperience: '1 years 9 months',
+//     workplaces: [
+//       { name: 'COINGATE', yearsOfExperience: '1 year 9 months', usage: 5 },
+//     ],
+//   },
+//   {
+//     name: 'HTML',
+//     yearsOfExperience: '3 years 3 months',
+//     workplaces: [
+//       { name: 'COINGATE', yearsOfExperience: '1 year 9 months', usage: 5 },
+//       { name: 'EIS', yearsOfExperience: '1 year 5 months', usage: 5 },
+//     ],
+//   },
+//   {
+//     name: 'REACT',
+//     yearsOfExperience: '3 years 3 months',
+//     workplaces: [
+//       { name: 'COINGATE', yearsOfExperience: '1 year 9 months', usage: 5 },
+//       { name: 'EIS', yearsOfExperience: '1 year 5 months', usage: 5 },
+//     ],
+//   },
+//   {
+//     name: 'REACT',
+//     yearsOfExperience: '3 years 3 months',
+//     workplaces: [
+//       { name: 'COINGATE', yearsOfExperience: '1 year 9 months', usage: 5 },
+//       { name: 'EIS', yearsOfExperience: '1 year 5 months', usage: 5 },
+//     ],
+//   },
+//   {
+//     name: 'REACT',
+//     yearsOfExperience: '3 years 3 months',
+//     workplaces: [
+//       { name: 'COINGATE', yearsOfExperience: '1 year 9 months', usage: 5 },
+//       { name: 'EIS', yearsOfExperience: '1 year 5 months', usage: 5 },
+//     ],
+//   },
+//   {
+//     name: 'REACT',
+//     yearsOfExperience: '3 years 3 months',
+//     workplaces: [
+//       { name: 'COINGATE', yearsOfExperience: '1 year 9 months', usage: 5 },
+//       { name: 'EIS', yearsOfExperience: '1 year 5 months', usage: 5 },
+//     ],
+//   },
+//   {
+//     name: 'REACT',
+//     yearsOfExperience: '3 years 3 months',
+//     workplaces: [
+//       { name: 'COINGATE', yearsOfExperience: '1 year 9 months', usage: 5 },
+//       { name: 'EIS', yearsOfExperience: '1 year 5 months', usage: 5 },
+//     ],
+//   },
+//   {
+//     name: 'REACT',
+//     yearsOfExperience: '3 years 3 months',
+//     workplaces: [
+//       { name: 'COINGATE', yearsOfExperience: '1 year 9 months', usage: 5 },
+//       { name: 'EIS', yearsOfExperience: '1 year 5 months', usage: 5 },
+//     ],
+//   },
+// ]

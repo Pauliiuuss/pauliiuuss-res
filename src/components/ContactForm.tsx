@@ -12,9 +12,9 @@ export const ContactForm = () => {
   return (
     <form className="flex flex-col gap-12">
       <div className="flex flex-col gap-4">
-        <p className="text-2xl">{'YOUR NAME'}</p>
+        <p className="text-xl text-og-background lg:text-2xl">{'YOUR NAME'}</p>
         <input
-          className="h-16 w-full rounded-md border-2 border-og-gray-400 p-4"
+          className="h-16 w-full rounded-md border-2 border-og-gray-100 p-4"
           type="text"
           placeholder="Paulius Astrauskas"
           required
@@ -22,9 +22,9 @@ export const ContactForm = () => {
         />
       </div>
       <div className="flex flex-col gap-4">
-        <p className="text-2xl">{'EMAIL'}</p>
+        <p className="text-xl text-og-background lg:text-2xl">{'EMAIL'}</p>
         <input
-          className="h-16 w-full rounded-md border-2 border-og-gray-400 p-4"
+          className="h-16 w-full rounded-md border-2 border-og-gray-100 p-4"
           type="text"
           placeholder="random@mail.com"
           required
@@ -32,16 +32,16 @@ export const ContactForm = () => {
         />
       </div>{' '}
       <div className="flex flex-col gap-4">
-        <p className="text-2xl">{'MESSAGE'}</p>
+        <p className="text-xl text-og-background lg:text-2xl">{'MESSAGE'}</p>
         <textarea
-          className="h-32 w-full rounded-md border-2 border-og-gray-400 p-4"
+          className="h-32 w-full rounded-md border-2 border-og-gray-100 p-4"
           placeholder="Message"
           required
           {...register('message')}
         />
       </div>
       <button
-        className="h-12 rounded-md bg-og-green-300 text-xl text-og-background hover:bg-og-green-400 active:bg-og-green-500"
+        className="bg-og-green-goda h-12 rounded-md text-lg text-og-background lg:text-xl"
         onClick={handleSubmit(onSubmit)}
       >
         SUBMIT
