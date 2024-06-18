@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import plugin from 'tailwindcss/plugin'
 
 const config: Config = {
   mode: 'jit',
@@ -10,6 +11,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      belekas: {
+        buttonUnderlineAnimation:
+          'after:content-[""] after:bg-og-background after:h-0.5 after:absolute after:w-[0%] after:left-0 after:-bottom-[5px] after:duration-300 after:tracking-[1px] hover:after:w-[100%]',
+      },
       colors: {
         'og-gray-100': '#DADADA',
         'og-gray-200': '#CCCCCC',
@@ -29,7 +34,9 @@ const config: Config = {
         'og-green-300': '#31C47D',
         'og-green-400': '#1D754A',
         'og-green-500': '#18623E',
+        'og-green-goda': '#195951',
         'og-background': '#FFFEF2',
+        'og-blured-black': 'rgba(41, 41, 41, .3)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -38,12 +45,37 @@ const config: Config = {
         grain:
           'url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Image_gaussian_noise_example.png)',
         curves: "url('/curves.svg')",
+        grad: "url('/grad.svg')",
       },
       transitionProperty: {
         cursor: 'height, width, opacity',
       },
+      animation: {
+        'slow-spin': 'spin 5s linear infinite',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        '.animation-buttonUnderline': {
+          '&:after': {
+            content: '""',
+            backgroundColor: '#FFFEF2',
+            height: '2px',
+            position: 'absolute',
+            width: '0%',
+            left: '0px',
+            bottom: '-5px',
+            transitionDuration: '300ms',
+            letterSpacing: '1px',
+          },
+          '&:hover::after': {
+            width: '100%',
+          },
+        },
+      })
+    }),
+  ],
 }
 export default config

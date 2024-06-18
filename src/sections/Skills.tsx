@@ -1,25 +1,41 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 
 import { CollapsableCard } from '@/components/CollapsableCard'
+import { SkillDescription } from '@/components/SkillDescription'
 
 export const Skills = ({ title, id }: { title: string; id: string }) => {
   const cursorRef = useRef<HTMLDivElement | null>(null)
+  const skillDescriptionRef = useRef<HTMLDivElement | null>(null)
+  const [skill, setSkill] = useState<string>('')
 
-  const handleMouseMove = (e: React.MouseEvent) => {
+  const handleMouseMove = (e: React.MouseEvent, offsetX?: number) => {
     if (cursorRef.current) {
       cursorRef.current.style.left = `${e.clientX}px`
       cursorRef.current.style.top = `${e.clientY}px`
     }
+    if (skillDescriptionRef.current) {
+      skillDescriptionRef.current.style.left = `${
+        offsetX ? e.clientX + offsetX : e.clientX + 400
+      }px`
+      skillDescriptionRef.current.style.top = `${e.clientY}px`
+    }
   }
 
-  const handleMouseEnter = () => {
+  const handleMouseEnter = (skill: string) => {
     if (cursorRef.current) {
       cursorRef.current.style.opacity = '10%'
       cursorRef.current.style.height = '150px'
       cursorRef.current.style.width = '150px'
+    }
+    if (skillDescriptionRef.current) {
+      skillDescriptionRef.current.style.opacity = '100%'
+      skillDescriptionRef.current.style.height = '200px'
+      skillDescriptionRef.current.style.width = '550px'
+
+      setSkill(skill)
     }
   }
 
@@ -28,6 +44,11 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
       cursorRef.current.style.opacity = '0%'
       cursorRef.current.style.height = '0px'
       cursorRef.current.style.width = '0px'
+    }
+    if (skillDescriptionRef.current) {
+      skillDescriptionRef.current.style.opacity = '0%'
+      skillDescriptionRef.current.style.height = '0px'
+      skillDescriptionRef.current.style.width = '0px'
     }
   }
 
@@ -38,7 +59,9 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
           <motion.p
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-            onMouseEnter={handleMouseEnter}
+            onMouseEnter={() => {
+              handleMouseEnter('TAILWIND')
+            }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
             className="cursor-none text-5xl font-bold text-og-background"
@@ -48,7 +71,9 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
           <motion.p
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-            onMouseEnter={handleMouseEnter}
+            onMouseEnter={() => {
+              handleMouseEnter('REACT')
+            }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
             className="cursor-none pt-5 text-5xl font-bold text-og-background"
@@ -60,7 +85,9 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
           <motion.p
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-            onMouseEnter={handleMouseEnter}
+            onMouseEnter={() => {
+              handleMouseEnter('CSS')
+            }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
             className="cursor-none text-3xl font-bold text-og-background"
@@ -70,7 +97,9 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
           <motion.p
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-            onMouseEnter={handleMouseEnter}
+            onMouseEnter={() => {
+              handleMouseEnter('NEXTJS')
+            }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
             className="cursor-none text-8xl font-bold text-og-background"
@@ -78,9 +107,13 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             {'NEXTJS'}
           </motion.p>
           <motion.p
-            onMouseMove={handleMouseMove}
+            onMouseMove={(e) => {
+              handleMouseMove(e, -400)
+            }}
             onMouseLeave={handleMouseLeave}
-            onMouseEnter={handleMouseEnter}
+            onMouseEnter={() => {
+              handleMouseEnter('HTML')
+            }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
             className="cursor-none pt-16 text-3xl font-bold text-og-background"
@@ -92,7 +125,9 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
           <motion.p
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-            onMouseEnter={handleMouseEnter}
+            onMouseEnter={() => {
+              handleMouseEnter('TYPESCRIPT')
+            }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
             className="cursor-none pt-8 text-5xl font-bold text-og-background"
@@ -104,7 +139,9 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
           <motion.p
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-            onMouseEnter={handleMouseEnter}
+            onMouseEnter={() => {
+              handleMouseEnter('JAVASCRIPT')
+            }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
             className=" cursor-none pt-4 text-3xl font-bold text-og-background"
@@ -112,9 +149,13 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             {'JAVASCRIPT'}
           </motion.p>
           <motion.p
-            onMouseMove={handleMouseMove}
+            onMouseMove={(e) => {
+              handleMouseMove(e, -400)
+            }}
             onMouseLeave={handleMouseLeave}
-            onMouseEnter={handleMouseEnter}
+            onMouseEnter={() => {
+              handleMouseEnter('GIT')
+            }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
             className="cursor-none text-8xl font-bold text-og-background"
@@ -122,9 +163,13 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             {'GIT'}
           </motion.p>
           <motion.p
-            onMouseMove={handleMouseMove}
+            onMouseMove={(e) => {
+              handleMouseMove(e, -400)
+            }}
             onMouseLeave={handleMouseLeave}
-            onMouseEnter={handleMouseEnter}
+            onMouseEnter={() => {
+              handleMouseEnter('JIRA')
+            }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
             className="cursor-none pt-10 text-3xl font-bold text-og-background"
@@ -136,7 +181,9 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
           <motion.p
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-            onMouseEnter={handleMouseEnter}
+            onMouseEnter={() => {
+              handleMouseEnter('MOBX')
+            }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
             className="cursor-none text-3xl font-bold text-og-background"
@@ -146,9 +193,13 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
         </div>
         <div className="flex justify-center pl-[720px]">
           <motion.p
-            onMouseMove={handleMouseMove}
+            onMouseMove={(e) => {
+              handleMouseMove(e, -400)
+            }}
             onMouseLeave={handleMouseLeave}
-            onMouseEnter={handleMouseEnter}
+            onMouseEnter={() => {
+              handleMouseEnter('VERCEL')
+            }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
             className="cursor-none text-5xl font-bold text-og-background"
@@ -156,9 +207,10 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             {'VERCEL'}
           </motion.p>
         </div>
+        <SkillDescription skill={skill} ref={skillDescriptionRef} />
         <div
           ref={cursorRef}
-          className="transition-cursor pointer-events-none fixed -translate-x-1/2 -translate-y-1/2 rounded-full bg-og-background opacity-10 blur-sm duration-150 ease-out"
+          className="pointer-events-none fixed -translate-x-1/2 -translate-y-1/2 rounded-full bg-og-background opacity-10 blur-sm transition-cursor duration-150 ease-out"
         ></div>
       </div>
     </CollapsableCard>

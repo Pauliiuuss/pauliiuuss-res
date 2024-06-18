@@ -1,53 +1,35 @@
-import classNames from 'classnames'
 import Link from 'next/link'
-
-import { buttonUnderlineAnimation } from '@/misc/constants'
 
 export const NavBar = () => {
   return (
-    <nav className="flex h-24 w-full flex-row items-center gap-8 pl-64 align-middle text-xl xl:text-2xl">
+    <nav className="flex h-24 w-full flex-row items-center justify-end gap-8 pr-64 align-middle text-2xl">
       <Link
         href={'#about'}
-        className={classNames(
-          buttonUnderlineAnimation,
-          'relative text-og-gray-500 hover:text-og-gray-600'
-        )}
+        className={'animation-buttonUnderline relative text-og-background'}
       >
         {'About me'}
       </Link>
       <Link
         href={'#skills'}
-        className={classNames(
-          buttonUnderlineAnimation,
-          'relative text-og-gray-500 hover:text-og-gray-600'
-        )}
+        className={'animation-buttonUnderline relative text-og-background'}
       >
         {'Skills'}
       </Link>
       <Link
         href={'#ex'}
-        className={classNames(
-          buttonUnderlineAnimation,
-          'relative text-og-gray-500 hover:text-og-gray-600'
-        )}
+        className={'animation-buttonUnderline relative text-og-background'}
       >
         {'Experience'}
       </Link>
       <Link
         href={'#ed'}
-        className={classNames(
-          buttonUnderlineAnimation,
-          'relative text-og-gray-500 hover:text-og-gray-600'
-        )}
+        className={'animation-buttonUnderline relative text-og-background'}
       >
         {'Education'}
       </Link>
       <Link
         href={'#contact'}
-        className={classNames(
-          buttonUnderlineAnimation,
-          'relative text-og-gray-500 hover:text-og-gray-600'
-        )}
+        className={'animation-buttonUnderline relative text-og-background'}
       >
         {'Contact'}
       </Link>
