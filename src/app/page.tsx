@@ -4,7 +4,8 @@ import { Contact } from '@/sections/Contact'
 import { ExEd } from '@/sections/ExEd'
 import { Footer } from '@/sections/Footer'
 import { Hero } from '@/sections/Hero'
-import { Skills } from '@/sections/Skills'
+
+// import { Skills } from '@/sections/Skills'
 
 export default function Home() {
   return (
