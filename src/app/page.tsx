@@ -5,7 +5,8 @@ import { ExEd } from '@/sections/ExEd'
 import { Footer } from '@/sections/Footer'
 import { Hero } from '@/sections/Hero'
 import { Intro } from '@/sections/Intro'
-import { Skills } from '@/sections/Skills'
+
+// import { Skills } from '@/sections/Skills'
 
 export default function Home() {
   return (

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { useState } from 'react'
 
-export const MobileNavbar = ({}: {}) => {
+export const MobileNavbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
   return (
