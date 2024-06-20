@@ -13,17 +13,17 @@ export const CollapsableCard = ({
   return (
     <div
       className={classNames(
-        'h-full w-full rounded-t-xl bg-og-black shadow-[0px_-10px_20px_rgba(0,0,0,.2)]'
+        'bg-og-gray-bg h-full w-full rounded-t-xl shadow-[0px_-10px_20px_rgba(0,0,0,.2)]'
       )}
       id={id}
     >
       <div className="sticky top-0 z-[5]">
         {title && (
-          <div className="bg-og-black">
-            <h2 className="px-6 py-12 text-4xl font-bold text-og-background lg:px-64 lg:text-8xl">
+          <div className="bg-og-gray-bg">
+            <h2 className="text-og-text px-6 py-12 text-4xl font-bold lg:px-64 lg:text-8xl">
               {title}
             </h2>
-            <hr className="h-[2px] border-0 bg-og-background" />
+            <hr className="bg-og-text h-[2px] border-0" />
           </div>
         )}
       </div>
