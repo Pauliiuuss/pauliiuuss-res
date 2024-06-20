@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   const pageGrain =
-    'before:content-[""], bg-og-black before:pointer-events-none before:fixed before:left-0 before:top-0 before:z-[100] before:h-full before:w-full before:bg-grain before:opacity-10'
+    'before:content-[""], bg-og-gray-bg before:pointer-events-none before:fixed before:left-0 before:top-0 before:z-[100] before:h-full before:w-full before:bg-grain before:opacity-5'
   return (
     <html lang="en" className="relative scroll-smooth">
       <body className={classNames(cairo.className, pageGrain)}>

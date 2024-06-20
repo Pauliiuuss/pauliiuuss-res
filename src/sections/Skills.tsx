@@ -64,7 +64,7 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
-            className="cursor-none text-5xl font-bold text-og-background"
+            className="text-og-text cursor-none text-5xl font-bold"
           >
             {'TAILWIND'}
           </motion.p>
@@ -76,7 +76,7 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
-            className="cursor-none pt-5 text-5xl font-bold text-og-background"
+            className="text-og-text cursor-none pt-5 text-5xl font-bold"
           >
             {'REACT'}
           </motion.p>
@@ -90,7 +90,7 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
-            className="cursor-none text-3xl font-bold text-og-background"
+            className="text-og-text cursor-none text-3xl font-bold"
           >
             {'CSS'}
           </motion.p>
@@ -102,7 +102,7 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
-            className="cursor-none text-8xl font-bold text-og-background"
+            className="text-og-text cursor-none text-8xl font-bold"
           >
             {'NEXTJS'}
           </motion.p>
@@ -116,7 +116,7 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
-            className="cursor-none pt-16 text-3xl font-bold text-og-background"
+            className="text-og-text cursor-none pt-16 text-3xl font-bold"
           >
             {'HTML'}
           </motion.p>
@@ -130,7 +130,7 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
-            className="cursor-none pt-8 text-5xl font-bold text-og-background"
+            className="text-og-text cursor-none pt-8 text-5xl font-bold"
           >
             {'TYPESCRIPT'}
           </motion.p>
@@ -144,7 +144,7 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
-            className=" cursor-none pt-4 text-3xl font-bold text-og-background"
+            className=" text-og-text cursor-none pt-4 text-3xl font-bold"
           >
             {'JAVASCRIPT'}
           </motion.p>
@@ -158,7 +158,7 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
-            className="cursor-none text-8xl font-bold text-og-background"
+            className="text-og-text cursor-none text-8xl font-bold"
           >
             {'GIT'}
           </motion.p>
@@ -172,7 +172,7 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
-            className="cursor-none pt-10 text-3xl font-bold text-og-background"
+            className="text-og-text cursor-none pt-10 text-3xl font-bold"
           >
             {'JIRA'}
           </motion.p>
@@ -186,7 +186,7 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
-            className="cursor-none text-3xl font-bold text-og-background"
+            className="text-og-text cursor-none text-3xl font-bold"
           >
             {'MOBX'}
           </motion.p>
@@ -202,7 +202,7 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
-            className="cursor-none text-5xl font-bold text-og-background"
+            className="text-og-text cursor-none text-5xl font-bold"
           >
             {'VERCEL'}
           </motion.p>
@@ -210,7 +210,7 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
         <SkillDescription skill={skill} ref={skillDescriptionRef} />
         <div
           ref={cursorRef}
-          className="pointer-events-none fixed -translate-x-1/2 -translate-y-1/2 rounded-full bg-og-background opacity-10 blur-sm transition-cursor duration-150 ease-out"
+          className="bg-og-text pointer-events-none fixed -translate-x-1/2 -translate-y-1/2 rounded-full opacity-10 blur-sm transition-cursor duration-150 ease-out"
         ></div>
       </div>
     </CollapsableCard>

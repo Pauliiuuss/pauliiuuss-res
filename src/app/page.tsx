@@ -4,12 +4,14 @@ import { Contact } from '@/sections/Contact'
 import { ExEd } from '@/sections/ExEd'
 import { Footer } from '@/sections/Footer'
 import { Hero } from '@/sections/Hero'
+import { Intro } from '@/sections/Intro'
 
 // import { Skills } from '@/sections/Skills'
 
 export default function Home() {
   return (
     <>
+      <Intro />
       <Hero id="home" />
       <AboutMe title="01. About me" id="about" />
       {/* <Skills title="02. Skills" id="skills" /> */}

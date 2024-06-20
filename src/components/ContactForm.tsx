@@ -11,8 +11,8 @@ export const ContactForm = () => {
 
   return (
     <form className="flex flex-col gap-12">
-      <div className="flex flex-col gap-4">
-        <p className="text-xl text-og-background lg:text-2xl">{'YOUR NAME'}</p>
+      <div className="flex flex-col gap-2">
+        <p className="text-og-text text-sm lg:text-xl">{'YOUR NAME'}</p>
         <input
           className="h-16 w-full rounded-md border-2 border-og-gray-100 p-4"
           type="text"
@@ -21,8 +21,8 @@ export const ContactForm = () => {
           {...register('name')}
         />
       </div>
-      <div className="flex flex-col gap-4">
-        <p className="text-xl text-og-background lg:text-2xl">{'EMAIL'}</p>
+      <div className="flex flex-col gap-2">
+        <p className="text-og-text text-sm lg:text-xl">{'EMAIL'}</p>
         <input
           className="h-16 w-full rounded-md border-2 border-og-gray-100 p-4"
           type="text"
@@ -31,8 +31,8 @@ export const ContactForm = () => {
           {...register('email')}
         />
       </div>{' '}
-      <div className="flex flex-col gap-4">
-        <p className="text-xl text-og-background lg:text-2xl">{'MESSAGE'}</p>
+      <div className="flex flex-col gap-2">
+        <p className="text-og-text text-sm lg:text-xl">{'MESSAGE'}</p>
         <textarea
           className="h-32 w-full rounded-md border-2 border-og-gray-100 p-4"
           placeholder="Message"
@@ -41,7 +41,7 @@ export const ContactForm = () => {
         />
       </div>
       <button
-        className="bg-og-green-goda h-12 rounded-md text-lg text-og-background lg:text-xl"
+        className="bg-og-green-goda text-og-text h-12 rounded-md text-lg lg:text-xl"
         onClick={handleSubmit(onSubmit)}
       >
         SUBMIT

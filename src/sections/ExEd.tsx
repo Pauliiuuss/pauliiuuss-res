@@ -17,18 +17,18 @@ export const ExEd = ({
         return (
           <div className="flex flex-col lg:w-[60%]" key={i.name}>
             <div className="flex flex-col lg:flex-row lg:items-center lg:gap-4">
-              <h2 className="text-3xl font-bold text-og-background lg:text-6xl">
+              <h2 className="text-og-text text-3xl font-bold lg:text-6xl">
                 {i.name}
               </h2>
-              <p className="text-lg text-og-background lg:text-3xl">{`(${i.date})`}</p>
+              <p className="text-og-text text-lg lg:text-3xl">{`(${i.date})`}</p>
             </div>
-            <p className="pt-6 text-2xl font-bold text-og-background lg:text-4xl">
+            <p className="text-og-text pt-6 text-2xl font-bold lg:text-4xl">
               {i.position}
             </p>
-            <p className="pt-10 text-xl text-og-background lg:text-3xl">
+            <p className="text-og-text pt-10 text-xl lg:text-3xl">
               {i.description}
             </p>
-            <p className="pt-10 text-xl font-bold text-og-background lg:text-3xl">
+            <p className="text-og-text pt-10 text-xl font-bold lg:text-3xl">
               {i.tools}
             </p>
           </div>
