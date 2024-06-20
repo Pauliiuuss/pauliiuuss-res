@@ -22,6 +22,7 @@ export const AnimatedLogo = () => {
     setTimeout(() => {
       controls.start({ opacity: 0, pathLength: 0 }, { duration: 0.5 })
     }, 2000)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
