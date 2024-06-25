@@ -13,7 +13,7 @@ const config: Config = {
     extend: {
       belekas: {
         buttonUnderlineAnimation:
-          'after:content-[""] after:bg-og-background after:h-0.5 after:absolute after:w-[0%] after:left-0 after:-bottom-[5px] after:duration-300 after:tracking-[1px] hover:after:w-[100%]',
+          'after:content-[""] after:h-0.5 after:absolute after:w-[0%] after:left-0 after:-bottom-[5px] after:duration-300 after:tracking-[1px] hover:after:w-[100%]',
       },
       colors: {
         'og-gray-100': '#DADADA',
@@ -22,19 +22,14 @@ const config: Config = {
         'og-gray-400': '#858585',
         'og-gray-500': '#525252',
         'og-gray-999': '#0A0A0A',
-        'og-gray-bg': '#141414',
-        'og-red-100': '#CA6868',
-        'og-red-200': '#BF4A4A',
-        'og-red-300': '#A43939',
-        'og-red-400': '#883030',
-        'og-red-500': '#6A2525',
-        'og-green-100': '#6CDAA5',
-        'og-green-200': '#4BD291',
-        'og-green-300': '#31C47D',
-        'og-green-400': '#1D754A',
-        'og-green-500': '#18623E',
-        'og-green-goda': '#09201D',
-        'og-text': '#FFFEF2',
+        'og-green-100': '#165048',
+        'og-green-200': '#12403A',
+        'og-green-300': '#0D302B',
+        'og-green-400': '#09201D',
+        'og-green-500': '#04100E',
+        'og-bg': '#141414',
+        'og-text': '#E2E1D6',
+        'og-text-hover': '#D5D3C3',
         'og-blured-black': 'rgba(41, 41, 41, .3)',
       },
       backgroundImage: {

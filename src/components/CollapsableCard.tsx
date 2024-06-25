@@ -5,31 +5,34 @@ export const CollapsableCard = ({
   title,
   children,
   id,
+  sx,
 }: {
   title?: string
   children: ReactNode
   id: string
+  sx?: string
 }) => {
   return (
     <div
       className={classNames(
-        'bg-og-gray-bg h-full w-full rounded-t-xl shadow-[0px_-10px_20px_rgba(0,0,0,.2)]'
+        sx,
+        'bg-og-bg h-full w-full rounded-t-xl shadow-[0px_-10px_20px_rgba(0,0,0,.4)]'
       )}
       id={id}
     >
       <div className="sticky top-0 z-[5]">
         {title && (
-          <div className="bg-og-gray-bg">
-            <h2 className="text-og-text px-6 py-12 text-4xl font-bold lg:px-64 lg:text-8xl">
+          <div className="bg-og-bg">
+            <h2 className="px-6 py-12 text-4xl font-bold text-og-text lg:px-40 lg:text-6xl 2xl:px-64 2xl:text-8xl">
               {title}
             </h2>
-            <hr className="bg-og-text h-[2px] border-0" />
+            <hr className="h-[2px] border-0 bg-og-text" />
           </div>
         )}
       </div>
       <div
         className={
-          'flex flex-col gap-12 px-6 py-24 lg:gap-44 lg:px-64 lg:py-44'
+          'flex flex-col gap-12 px-6 py-24 lg:gap-32 lg:px-40 lg:py-28 2xl:gap-44 2xl:px-64 2xl:py-44'
         }
       >
         {children}

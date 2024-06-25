@@ -12,23 +12,22 @@ export const ExEd = ({
   id: string
 }) => {
   return (
-    <CollapsableCard title={title} id={id}>
+    <CollapsableCard title={title} id={id} key={id}>
       {data.map((i) => {
         return (
-          <div className="flex flex-col lg:w-[60%]" key={i.name}>
-            <div className="flex flex-col lg:flex-row lg:items-center lg:gap-4">
-              <h2 className="text-og-text text-3xl font-bold lg:text-6xl">
-                {i.name}
-              </h2>
-              <p className="text-og-text text-lg lg:text-3xl">{`(${i.date})`}</p>
-            </div>
-            <p className="text-og-text pt-6 text-2xl font-bold lg:text-4xl">
+          <div
+            className="flex flex-col gap-4 2xl:w-[60%] 2xl:gap-8"
+            key={i.name}
+          >
+            <h2 className="text-3xl font-bold text-og-text 2xl:text-6xl">
+              {i.name}
+            </h2>
+            <p className="text-lg text-og-text 2xl:text-3xl">{`(${i.date})`}</p>
+            <p className="text-2xl font-bold text-og-text 2xl:text-4xl">
               {i.position}
             </p>
-            <p className="text-og-text pt-10 text-xl lg:text-3xl">
-              {i.description}
-            </p>
-            <p className="text-og-text pt-10 text-xl font-bold lg:text-3xl">
+            <p className="text-xl text-og-text 2xl:text-3xl">{i.description}</p>
+            <p className="text-xl font-bold text-og-text 2xl:text-3xl">
               {i.tools}
             </p>
           </div>

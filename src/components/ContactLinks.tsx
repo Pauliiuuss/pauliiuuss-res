@@ -4,16 +4,16 @@ export const ContactLinks = () => {
   return (
     <>
       <div className="flex flex-col">
-        <p className="text-og-text mb-6 text-xl font-bold lg:text-3xl">
+        <p className="mb-6 text-xl font-bold text-og-text 2xl:text-3xl">
           {'FOR FURTHER ENQUIRIES'}
         </p>
-        <p className="text-og-text mb-4 text-lg lg:text-xl">
+        <p className="mb-4 text-lg text-og-text 2xl:text-xl">
           {'paulius.astrauskas97@gmail.com'}
         </p>
-        <p className="text-og-text text-lg lg:text-xl">{'+37064378884'}</p>
+        <p className="text-lg text-og-text 2xl:text-xl">{'+37064378884'}</p>
       </div>
       <div className="flex flex-col">
-        <p className="text-og-text mb-6 text-xl font-bold lg:text-3xl ">
+        <p className="mb-6 text-xl font-bold text-og-text 2xl:text-3xl ">
           {'SOCIAL MEDIA'}
         </p>
         <Link
@@ -21,7 +21,7 @@ export const ContactLinks = () => {
           rel="noopener norefferer"
           target="_blank"
           className={
-            'animation-buttonUnderline text-og-text relative mb-4 w-fit text-lg lg:text-xl'
+            'relative mb-4 w-fit text-lg text-og-text animation-buttonUnderline 2xl:text-xl'
           }
         >
           {'LinkedIn'}
@@ -31,7 +31,7 @@ export const ContactLinks = () => {
           rel="noopener norefferer"
           target="_blank"
           className={
-            'animation-buttonUnderline text-og-text relative w-fit text-lg lg:text-xl'
+            'relative w-fit text-lg text-og-text animation-buttonUnderline 2xl:text-xl'
           }
         >
           {'Github'}
