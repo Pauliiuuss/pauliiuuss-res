@@ -7,23 +7,17 @@ export const Footer = () => {
   return (
     <Card
       sx={
-        'flex-col lg:flex-row lg:justify-between items-center lg:gap-0 py-12 lg:py-24 pb-6 bg-og-gray-999 shadow-[0px_-10px_20px_rgba(0,0,0,.2)]'
+        'flex-col 2xl:flex-row 2xl:justify-between items-center 2xl:gap-0 py-8 2xl:py-16 pb-6 bg-og-bg shadow-[0px_-10px_20px_rgba(0,0,0,.4)]'
       }
     >
-      <Image
-        height={300}
-        width={300}
-        alt="CPRGHT"
-        src={'/logo.svg'}
-        className="pb-6 lg:pb-0"
-      />
+      <Image height={300} width={300} alt="CPRGHT" src={'/logo.svg'} />
       <div className="flex flex-row gap-24">
         <ul className="flex list-none flex-col gap-4">
           <li>
             <Link
               href={'#home'}
               className={
-                'text-md relative text-og-text animation-buttonUnderline lg:text-xl'
+                'text-md relative text-og-text animation-buttonUnderline 2xl:text-xl'
               }
             >
               {'Home'}
@@ -33,7 +27,7 @@ export const Footer = () => {
             <Link
               href={'#about'}
               className={
-                'text-md relative text-og-text animation-buttonUnderline lg:text-xl'
+                'text-md relative text-og-text animation-buttonUnderline 2xl:text-xl'
               }
             >
               {'About me'}
@@ -43,7 +37,7 @@ export const Footer = () => {
             <Link
               href={'#skills'}
               className={
-                'text-md relative text-og-text animation-buttonUnderline lg:text-xl'
+                'text-md relative text-og-text animation-buttonUnderline 2xl:text-xl'
               }
             >
               {'Skills'}
@@ -53,7 +47,7 @@ export const Footer = () => {
             <Link
               href={'#ex'}
               className={
-                'text-md relative text-og-text animation-buttonUnderline lg:text-xl'
+                'text-md relative text-og-text animation-buttonUnderline 2xl:text-xl'
               }
             >
               {'Experience'}
@@ -63,7 +57,7 @@ export const Footer = () => {
             <Link
               href={'#ed'}
               className={
-                'text-md relative text-og-text animation-buttonUnderline lg:text-xl'
+                'text-md relative text-og-text animation-buttonUnderline 2xl:text-xl'
               }
             >
               {'Education'}
@@ -73,7 +67,7 @@ export const Footer = () => {
             <Link
               href={'#contact'}
               className={
-                'text-md relative text-og-text animation-buttonUnderline lg:text-xl'
+                'text-md relative text-og-text animation-buttonUnderline 2xl:text-xl'
               }
             >
               {'Contact'}
@@ -82,14 +76,14 @@ export const Footer = () => {
         </ul>
 
         {/*** SOCIAL --- visible only on pc ***/}
-        <ul className="hidden list-none flex-col gap-4 lg:flex">
+        <ul className="hidden list-none flex-col gap-4 2xl:flex">
           <li>
             <Link
               href={'https://linkedin.com/in/paulius-astrauskas'}
               rel="noopener norefferer"
               target="_blank"
               className={
-                'text-md relative text-og-text animation-buttonUnderline lg:text-xl'
+                'text-md relative text-og-text animation-buttonUnderline 2xl:text-xl'
               }
             >
               {'LinkedIn'}
@@ -101,7 +95,7 @@ export const Footer = () => {
               rel="noopener norefferer"
               target="_blank"
               className={
-                'text-md relative text-og-text animation-buttonUnderline lg:text-xl'
+                'text-md relative text-og-text animation-buttonUnderline 2xl:text-xl'
               }
             >
               {'Github'}

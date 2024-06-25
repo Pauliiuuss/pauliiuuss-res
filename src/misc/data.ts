@@ -13,6 +13,11 @@ export type SkillsData = {
   offsetY?: string
 }
 
+export type NavigationItem = {
+  name: string
+  direction: string
+}
+
 export const experience: ExEdData[] = [
   {
     name: 'COINGATE',
@@ -40,6 +45,29 @@ export const education: ExEdData[] = [
     description:
       'I took JAVA courses at VTMC, and due to good entrance test results, I was transferred to Akademija.IT. At Akademija.IT, we were taught at a higher level and a more intense pace. We learned various skills, including: Operating system management (Linux), HTML, CSS, JavaScript, and JAVA, Designing and maintaining databases, technologies such as React and Spring Boot. At the end, we had a group project where we built a full-stack working web application. We used JAVA and JavaScript languages, an H2 database, React and Spring Boot technologies, and the Agile methodology.',
     tools: 'Vocational Degree',
+  },
+]
+
+export const navigation: NavigationItem[] = [
+  {
+    name: 'About me',
+    direction: '#about',
+  },
+  {
+    name: 'Skills',
+    direction: '#skills',
+  },
+  {
+    name: 'Experience',
+    direction: '#ex',
+  },
+  {
+    name: 'Education',
+    direction: '#ed',
+  },
+  {
+    name: 'Contact',
+    direction: '#contact',
   },
 ]
 

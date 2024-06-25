@@ -20,13 +20,13 @@ export const Intro = () => {
           animate={{ opacity: 0 }}
           transition={{
             duration: 0.5,
-            delay: 3,
+            delay: 2.7,
             ease: 'easeInOut',
           }}
           onAnimationComplete={() => {
             setShowAnimation(false)
           }}
-          className="absolute left-0 top-0 z-[20] flex h-svh w-full items-center justify-center bg-og-gray-bg"
+          className="bg-og-bg fixed left-0 top-0 z-[20] flex h-svh w-full items-center justify-center"
         >
           <AnimatedLogo />
         </motion.div>

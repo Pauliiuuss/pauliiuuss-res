@@ -53,9 +53,9 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
   }
 
   return (
-    <CollapsableCard title={title} id={id}>
+    <CollapsableCard title={title} id={id} sx="hidden 2xl:block" key={id}>
       <div className="flex flex-col gap-8">
-        <div className="flex flex-row justify-center gap-72 pr-96">
+        <div className="flex flex-row justify-center gap-14 2xl:gap-72 2xl:pr-96">
           <motion.p
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
@@ -64,7 +64,7 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
-            className="text-og-text cursor-none text-5xl font-bold"
+            className="cursor-none text-xl font-bold text-og-text 2xl:text-5xl"
           >
             {'TAILWIND'}
           </motion.p>
@@ -76,12 +76,12 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
-            className="text-og-text cursor-none pt-5 text-5xl font-bold"
+            className="cursor-none pt-5 text-xl font-bold text-og-text 2xl:text-5xl"
           >
             {'REACT'}
           </motion.p>
         </div>
-        <div className="flex flex-row justify-center gap-72 pr-96">
+        <div className="flex flex-row justify-center gap-14 2xl:gap-72 2xl:pr-96">
           <motion.p
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
@@ -90,7 +90,7 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
-            className="text-og-text cursor-none text-3xl font-bold"
+            className="cursor-none font-bold text-og-text 2xl:text-3xl"
           >
             {'CSS'}
           </motion.p>
@@ -102,7 +102,7 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
-            className="text-og-text cursor-none text-8xl font-bold"
+            className="cursor-none text-2xl font-bold text-og-text 2xl:text-8xl"
           >
             {'NEXTJS'}
           </motion.p>
@@ -116,12 +116,12 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
-            className="text-og-text cursor-none pt-16 text-3xl font-bold"
+            className="cursor-none font-bold text-og-text 2xl:pt-16 2xl:text-3xl"
           >
             {'HTML'}
           </motion.p>
         </div>
-        <div className="flex justify-center pr-[800px]">
+        <div className="flex gap-16 2xl:justify-center 2xl:gap-80 2xl:pr-96 2xl:pt-12">
           <motion.p
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
@@ -130,12 +130,10 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
-            className="text-og-text cursor-none pt-8 text-5xl font-bold"
+            className="cursor-none text-xl font-bold text-og-text 2xl:pt-8 2xl:text-5xl"
           >
             {'TYPESCRIPT'}
           </motion.p>
-        </div>
-        <div className="flex flex-row justify-center gap-40 pl-[400px]">
           <motion.p
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
@@ -144,10 +142,12 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
-            className=" text-og-text cursor-none pt-4 text-3xl font-bold"
+            className=" cursor-none pt-4 font-bold text-og-text 2xl:text-3xl"
           >
             {'JAVASCRIPT'}
           </motion.p>
+        </div>
+        <div className="flex flex-row justify-center gap-14 2xl:gap-40 2xl:pt-12">
           <motion.p
             onMouseMove={(e) => {
               handleMouseMove(e, -400)
@@ -158,7 +158,7 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
-            className="text-og-text cursor-none text-8xl font-bold"
+            className="cursor-none text-2xl font-bold text-og-text 2xl:text-8xl"
           >
             {'GIT'}
           </motion.p>
@@ -172,12 +172,12 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
-            className="text-og-text cursor-none pt-10 text-3xl font-bold"
+            className="cursor-none pt-10 font-bold text-og-text 2xl:text-3xl"
           >
             {'JIRA'}
           </motion.p>
         </div>
-        <div className="flex justify-center pl-32 pt-12">
+        <div className="flex justify-center gap-20 2xl:gap-80 2xl:pl-96 2xl:pt-16">
           <motion.p
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
@@ -186,12 +186,10 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
-            className="text-og-text cursor-none text-3xl font-bold"
+            className="cursor-none font-bold text-og-text 2xl:text-3xl"
           >
             {'MOBX'}
           </motion.p>
-        </div>
-        <div className="flex justify-center pl-[720px]">
           <motion.p
             onMouseMove={(e) => {
               handleMouseMove(e, -400)
@@ -202,7 +200,7 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
             }}
             whileHover={{ scale: [null, 1.5, 1.4] }}
             transition={{ duration: 0.3 }}
-            className="text-og-text cursor-none text-5xl font-bold"
+            className="cursor-none text-xl font-bold text-og-text 2xl:pt-12 2xl:text-5xl"
           >
             {'VERCEL'}
           </motion.p>
@@ -210,7 +208,7 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
         <SkillDescription skill={skill} ref={skillDescriptionRef} />
         <div
           ref={cursorRef}
-          className="bg-og-text pointer-events-none fixed -translate-x-1/2 -translate-y-1/2 rounded-full opacity-10 blur-sm transition-cursor duration-150 ease-out"
+          className="pointer-events-none fixed -translate-x-1/2 -translate-y-1/2 rounded-full bg-og-text opacity-10 blur-sm transition-cursor duration-150 ease-out"
         ></div>
       </div>
     </CollapsableCard>
