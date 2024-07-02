@@ -1,6 +1,10 @@
 import type { Config } from 'tailwindcss'
 import plugin from 'tailwindcss/plugin'
 
+const {
+  default: flattenColorPalette,
+} = require('tailwindcss/lib/util/flattenColorPalette')
+
 const config: Config = {
   mode: 'jit',
   purge: ['./src/**/*.{js,sjx,ts,tsx}', './public/index.html'],
@@ -13,7 +17,7 @@ const config: Config = {
     extend: {
       belekas: {
         buttonUnderlineAnimation:
-          'after:content-[""] after:h-0.5 after:absolute after:w-[0%] after:left-0 after:-bottom-[5px] after:duration-300 after:tracking-[1px] hover:after:w-[100%]',
+          'after:content-[""] after:h-[10px] after:absolute after:w-[0%] after:left-0 after:-bottom-[5px] after:duration-300 after:tracking-[1px] hover:after:w-[100%]',
       },
       colors: {
         'og-gray-100': '#DADADA',
@@ -29,8 +33,11 @@ const config: Config = {
         'og-green-500': '#04100E',
         'og-bg': '#141414',
         'og-text': '#E2E1D6',
+        'og-border-faded': 'rgba(226, 225, 214, .3)',
         'og-text-hover': '#D5D3C3',
-        'og-blured-black': 'rgba(41, 41, 41, .3)',
+        'og-blured-black': 'rgba(50, 50, 50, .2)',
+        'og-blured-dark': 'rgba(100, 100, 100, .1)',
+        'og-blured-darkk': 'rgba(120, 120, 120, .7)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -38,14 +45,24 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         grain:
           'url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Image_gaussian_noise_example.png)',
-        curves: "url('/curves.svg')",
         grad: "url('/grad.svg')",
       },
       transitionProperty: {
         cursor: 'height, width, opacity',
       },
       animation: {
-        'slow-spin': 'spin 5s linear infinite',
+        slowSpin: 'spin 5s linear infinite',
+        aurora: 'aurora 60s linear infinite',
+      },
+      keyframes: {
+        aurora: {
+          from: {
+            backgroundPosition: '50% 50%, 50% 50%',
+          },
+          to: {
+            backgroundPosition: '350% 50%, 350% 50%',
+          },
+        },
       },
     },
   },
@@ -70,6 +87,18 @@ const config: Config = {
         },
       })
     }),
+    addVariablesForColors,
   ],
+}
+
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme('colors'))
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  )
+
+  addBase({
+    ':root': newVars,
+  })
 }
 export default config

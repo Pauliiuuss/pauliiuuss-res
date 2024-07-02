@@ -50,7 +50,7 @@ export const ScrollToTheTop = () => {
         alt="tothetop"
         src={'/scroll_to_top.svg'}
         fill
-        className="absolute animate-slow-spin"
+        className="absolute animate-slowSpin"
       />
       <div>
         <IoIosArrowRoundUp size={35} />

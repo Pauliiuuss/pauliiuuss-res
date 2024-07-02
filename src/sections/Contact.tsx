@@ -4,7 +4,7 @@ import { ContactLinks } from '@/components/ContactLinks'
 
 export const Contact = ({ id }: { id: string }) => {
   return (
-    <Card sx={'flex-col py-24 2xl:py-44 bg-grad bg-cover'} id={id} key={id}>
+    <Card sx={'flex-col py-24 2xl:py-44'} id={id} key={id}>
       <h2 className="text-4xl font-bold text-og-text 2xl:pb-12 2xl:text-8xl">
         {'CONTACT ME'}
       </h2>

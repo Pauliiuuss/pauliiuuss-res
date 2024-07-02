@@ -10,7 +10,7 @@ export const Footer = () => {
         'flex-col 2xl:flex-row 2xl:justify-between items-center 2xl:gap-0 py-8 2xl:py-16 pb-6 bg-og-bg shadow-[0px_-10px_20px_rgba(0,0,0,.4)]'
       }
     >
-      <Image height={300} width={300} alt="CPRGHT" src={'/logo.svg'} />
+      <Image height={200} width={200} alt="CPRGHT" src={'/logo.svg'} />
       <div className="flex flex-row gap-24">
         <ul className="flex list-none flex-col gap-4">
           <li>

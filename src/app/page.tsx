@@ -12,10 +12,12 @@ export default function Home() {
     <>
       <Intro />
       <Hero id="home" />
-      <AboutMe title="01. About me" id="about" />
-      <Skills title="02. Skills" id="skills" />
-      <ExEd data={experience} title="03. Experience" id="ex" />
-      <ExEd data={education} title="04. Education" id="ed" />
+      <div className="mx-6 mt-10 border-[1px] border-og-gray-500 lg:mx-40 2xl:mx-64 2xl:mt-20">
+        <AboutMe title="// 01. About me" id="about" />
+        <Skills title="// 02. Skills" id="skills2" />
+        <ExEd data={experience} title="// 03. Experience" id="ex" />
+        <ExEd data={education} title="// 04. Education" id="ed" />
+      </div>
       <Contact id={'contact'} />
       <Footer key={'footer'} />
     </>

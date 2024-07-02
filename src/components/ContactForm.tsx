@@ -14,7 +14,7 @@ export const ContactForm = () => {
       <div className="flex flex-col gap-3">
         <p className="text-sm text-og-text 2xl:text-lg">{'Your Name'}</p>
         <input
-          className="h-16 w-full rounded-md border-2 border-og-gray-500 bg-og-blured-black p-4 backdrop-blur-lg"
+          className="h-16 w-full rounded-md border-[1px] border-og-gray-500 bg-og-blured-black p-4 backdrop-blur-lg"
           type="text"
           placeholder="Paulius Astrauskas"
           required
@@ -24,7 +24,7 @@ export const ContactForm = () => {
       <div className="flex flex-col gap-2">
         <p className="text-sm text-og-text 2xl:text-lg">{'Email'}</p>
         <input
-          className="h-16 w-full rounded-md border-2 border-og-gray-500 bg-og-blured-black p-4 backdrop-blur-lg"
+          className="h-16 w-full rounded-md border-[1px] border-og-gray-500 bg-og-blured-black p-4 backdrop-blur-lg"
           type="email"
           placeholder="random@mail.com"
           required
@@ -34,7 +34,7 @@ export const ContactForm = () => {
       <div className="flex flex-col gap-2">
         <p className="text-sm text-og-text 2xl:text-lg">{'Message'}</p>
         <textarea
-          className="h-32 w-full rounded-md border-2 border-og-gray-500 bg-og-blured-black p-4 backdrop-blur-lg"
+          className="h-32 w-full rounded-md border-[1px] border-og-gray-500 bg-og-blured-black p-4 backdrop-blur-lg"
           placeholder="Message"
           required
           style={{ resize: 'none' }}
@@ -42,7 +42,7 @@ export const ContactForm = () => {
         />
       </div>
       <button
-        className="h-12 rounded-md bg-og-green-300 text-og-text hover:bg-og-green-400 2xl:text-lg"
+        className="h-12 rounded-md border-[1px] border-og-gray-500 bg-og-green-300 text-og-text hover:border-[2px]  hover:bg-og-green-400 2xl:text-lg"
         onClick={handleSubmit(onSubmit)}
       >
         SUBMIT
