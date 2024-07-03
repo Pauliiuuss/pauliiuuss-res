@@ -8,9 +8,8 @@ export type ExEdData = {
 
 export type SkillsData = {
   name: string
-  yearsOfExperience: string
-  workplaces: { name: string; yearsOfExperience: string; usage: number }[]
-  offsetY?: string
+  id: string
+  animDelay: number
 }
 
 export type NavigationItem = {
@@ -71,90 +70,80 @@ export const navigation: NavigationItem[] = [
   },
 ]
 
-// export const skills: SkillsData[] = [
-//   {
-//     name: 'TAILWIND',
-//     yearsOfExperience: '6 months',
-//     workplaces: [{ name: 'COINGATE', yearsOfExperience: '6 months', usage: 3 }],
-//   },
-//   {
-//     name: 'REACT',
-//     yearsOfExperience: '3 years 3 months',
-//     workplaces: [
-//       { name: 'COINGATE', yearsOfExperience: '1 year 9 months', usage: 5 },
-//       { name: 'EIS', yearsOfExperience: '1 year 5 months', usage: 5 },
-//     ],+
-
-//   },
-//   {
-//     name: 'CSS',
-//     yearsOfExperience: '3 years 3 months',
-//     workplaces: [
-//       { name: 'COINGATE', yearsOfExperience: '1 year 9 months', usage: 3 },
-//       { name: 'EIS', yearsOfExperience: '1 year 5 months', usage: 5 },
-//     ],
-//   },
-//   {
-//     name: 'NEXTJS',
-//     yearsOfExperience: '1 years 9 months',
-//     workplaces: [
-//       { name: 'COINGATE', yearsOfExperience: '1 year 9 months', usage: 5 },
-//     ],
-//   },
-//   {
-//     name: 'HTML',
-//     yearsOfExperience: '3 years 3 months',
-//     workplaces: [
-//       { name: 'COINGATE', yearsOfExperience: '1 year 9 months', usage: 5 },
-//       { name: 'EIS', yearsOfExperience: '1 year 5 months', usage: 5 },
-//     ],
-//   },
-//   {
-//     name: 'REACT',
-//     yearsOfExperience: '3 years 3 months',
-//     workplaces: [
-//       { name: 'COINGATE', yearsOfExperience: '1 year 9 months', usage: 5 },
-//       { name: 'EIS', yearsOfExperience: '1 year 5 months', usage: 5 },
-//     ],
-//   },
-//   {
-//     name: 'REACT',
-//     yearsOfExperience: '3 years 3 months',
-//     workplaces: [
-//       { name: 'COINGATE', yearsOfExperience: '1 year 9 months', usage: 5 },
-//       { name: 'EIS', yearsOfExperience: '1 year 5 months', usage: 5 },
-//     ],
-//   },
-//   {
-//     name: 'REACT',
-//     yearsOfExperience: '3 years 3 months',
-//     workplaces: [
-//       { name: 'COINGATE', yearsOfExperience: '1 year 9 months', usage: 5 },
-//       { name: 'EIS', yearsOfExperience: '1 year 5 months', usage: 5 },
-//     ],
-//   },
-//   {
-//     name: 'REACT',
-//     yearsOfExperience: '3 years 3 months',
-//     workplaces: [
-//       { name: 'COINGATE', yearsOfExperience: '1 year 9 months', usage: 5 },
-//       { name: 'EIS', yearsOfExperience: '1 year 5 months', usage: 5 },
-//     ],
-//   },
-//   {
-//     name: 'REACT',
-//     yearsOfExperience: '3 years 3 months',
-//     workplaces: [
-//       { name: 'COINGATE', yearsOfExperience: '1 year 9 months', usage: 5 },
-//       { name: 'EIS', yearsOfExperience: '1 year 5 months', usage: 5 },
-//     ],
-//   },
-//   {
-//     name: 'REACT',
-//     yearsOfExperience: '3 years 3 months',
-//     workplaces: [
-//       { name: 'COINGATE', yearsOfExperience: '1 year 9 months', usage: 5 },
-//       { name: 'EIS', yearsOfExperience: '1 year 5 months', usage: 5 },
-//     ],
-//   },
-// ]
+export const skills: SkillsData[] = [
+  {
+    name: 'JavaScript',
+    id: 'js',
+    animDelay: 0,
+  },
+  {
+    name: 'Typescript',
+    id: 'ts',
+    animDelay: 0.1,
+  },
+  {
+    name: 'CSS',
+    id: 'css',
+    animDelay: 0.2,
+  },
+  {
+    name: 'HTML',
+    id: 'html',
+    animDelay: 0.3,
+  },
+  {
+    name: 'JAVA',
+    id: 'java',
+    animDelay: 0.4,
+  },
+  {
+    name: 'NextJS',
+    id: 'nextjs',
+    animDelay: 0.5,
+  },
+  {
+    name: 'React',
+    id: 'react',
+    animDelay: 0.6,
+  },
+  {
+    name: 'Tailwind',
+    id: 'tw',
+    animDelay: 0.7,
+  },
+  {
+    name: 'GIT',
+    id: 'git',
+    animDelay: 0.8,
+  },
+  {
+    name: 'Vercel',
+    id: 'vercel',
+    animDelay: 0.9,
+  },
+  {
+    name: 'VSCode',
+    id: 'vscode',
+    animDelay: 1,
+  },
+  {
+    name: 'Figma',
+    id: 'figma',
+    animDelay: 1.1,
+  },
+  {
+    name: 'JIRA',
+    id: 'jira',
+    animDelay: 1.2,
+  },
+  {
+    name: 'Ubuntu',
+    id: 'ubuntu',
+    animDelay: 1.3,
+  },
+  {
+    name: 'Postman',
+    id: 'postman',
+    animDelay: 1.4,
+  },
+]

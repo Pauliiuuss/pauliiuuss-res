@@ -32,7 +32,7 @@ export const AnimatedLogo = () => {
       viewBox="0 0 162 106"
       fill="none"
       xmlns={'http://www.w3.org/2000/svg'}
-      className={'stroke-jo overflow-visible stroke-og-text stroke-[0.5]'}
+      className={'overflow-visible stroke-og-text stroke-[0.5]'}
       style={{
         strokeLinejoin: 'round',
         strokeLinecap: 'round',
@@ -44,10 +44,8 @@ export const AnimatedLogo = () => {
           initial="hidden"
           animate={controls}
           variants={icon}
-          //   fill={'#727272'}
           transition={{
             default: { duration: 2, ease: 'easeInOut' },
-            // fill: { duration: 4, ease: [1, 0, 0.8, 1] },
           }}
         />
         <motion.path
@@ -55,10 +53,8 @@ export const AnimatedLogo = () => {
           initial="hidden"
           animate={controls}
           variants={icon}
-          //   fill={'#C5C6C6'}
           transition={{
             default: { duration: 2, ease: 'easeInOut' },
-            // fill: { duration: 4, ease: [1, 0, 0.8, 1] },
           }}
         />
         <motion.path
@@ -66,10 +62,8 @@ export const AnimatedLogo = () => {
           initial="hidden"
           animate={controls}
           variants={icon}
-          //   fill={'#727272'}
           transition={{
             default: { duration: 2, ease: 'easeInOut' },
-            // fill: { duration: 4, ease: [1, 0, 0.8, 1] },
           }}
         />
       </g>

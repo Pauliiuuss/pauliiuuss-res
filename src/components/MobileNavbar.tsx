@@ -17,7 +17,7 @@ export const MobileNavbar = () => {
   }, [isOpen])
 
   return (
-    <div className="relative flex flex-col justify-between px-5 2xl:hidden">
+    <div className="relative flex flex-col justify-between px-5 lg:hidden">
       <Image height={100} width={100} alt="Logo" src={'/logo.svg'} />
       <div className="absolute right-5 top-5 z-[10] flex h-12 w-12">
         {/*** ANIMATED HAMBURGER ***/}

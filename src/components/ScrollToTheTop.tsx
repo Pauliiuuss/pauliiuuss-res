@@ -41,7 +41,7 @@ export const ScrollToTheTop = () => {
         duration: 0.2,
         ease: 'easeIn',
       }}
-      className="fixed bottom-6 end-6 z-[10] flex h-14 w-14 cursor-pointer items-center justify-center rounded-full bg-og-blured-black text-center text-og-text backdrop-blur-lg 2xl:bottom-10 2xl:end-10 2xl:h-24 2xl:w-24"
+      className="fixed bottom-5 end-7 z-[15] flex h-14 w-14 cursor-pointer items-center justify-center rounded-full bg-og-blured-black text-center text-og-text backdrop-blur-lg 2xl:bottom-10 2xl:end-10 2xl:h-24 2xl:w-24"
       onClick={() => {
         window.scrollTo({ top: 0 })
       }}
@@ -50,7 +50,7 @@ export const ScrollToTheTop = () => {
         alt="tothetop"
         src={'/scroll_to_top.svg'}
         fill
-        className="absolute animate-slow-spin"
+        className="absolute animate-slowSpin"
       />
       <div>
         <IoIosArrowRoundUp size={35} />
