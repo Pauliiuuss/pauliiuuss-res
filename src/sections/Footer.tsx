@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
 import { Card } from '@/components/Card'
+import { FooterNav } from '@/components/FooterNav'
 
 export const Footer = () => {
   return (
@@ -17,98 +17,7 @@ export const Footer = () => {
         src={'/logo.svg'}
         className="lg:hidden"
       />
-      <div className="flex flex-row gap-24">
-        <ul className="flex list-none flex-col gap-4">
-          <li>
-            <Link
-              href={'#home'}
-              className={
-                'text-md relative text-lg text-og-text animation-buttonUnderline 2xl:text-xl'
-              }
-            >
-              {'Home'}
-            </Link>
-          </li>
-          <li>
-            <Link
-              href={'#about'}
-              className={
-                'text-md relative text-lg text-og-text animation-buttonUnderline 2xl:text-xl'
-              }
-            >
-              {'About me'}
-            </Link>
-          </li>
-          <li>
-            <Link
-              href={'#skills'}
-              className={
-                'text-md relative text-lg text-og-text animation-buttonUnderline 2xl:text-xl'
-              }
-            >
-              {'Skills'}
-            </Link>
-          </li>
-          <li>
-            <Link
-              href={'#ex'}
-              className={
-                'text-md relative text-lg text-og-text animation-buttonUnderline 2xl:text-xl'
-              }
-            >
-              {'Experience'}
-            </Link>
-          </li>
-          <li>
-            <Link
-              href={'#ed'}
-              className={
-                'text-md relative text-lg text-og-text animation-buttonUnderline 2xl:text-xl'
-              }
-            >
-              {'Education'}
-            </Link>
-          </li>
-          <li>
-            <Link
-              href={'#contact'}
-              className={
-                'text-md relative text-lg text-og-text animation-buttonUnderline 2xl:text-xl'
-              }
-            >
-              {'Contact'}
-            </Link>
-          </li>
-        </ul>
-
-        {/*** SOCIAL --- visible only on pc ***/}
-        <ul className="hidden list-none flex-col gap-4 lg:flex">
-          <li>
-            <Link
-              href={'https://linkedin.com/in/paulius-astrauskas'}
-              rel="noopener norefferer"
-              target="_blank"
-              className={
-                'text-md relative text-lg text-og-text animation-buttonUnderline 2xl:text-xl'
-              }
-            >
-              {'LinkedIn'}
-            </Link>
-          </li>
-          <li>
-            <Link
-              href={'https://github.com/Pauliiuuss'}
-              rel="noopener norefferer"
-              target="_blank"
-              className={
-                'text-md relative text-lg text-og-text animation-buttonUnderline 2xl:text-xl'
-              }
-            >
-              {'Github'}
-            </Link>
-          </li>
-        </ul>
-      </div>
+      <FooterNav />
       <p className="flex flex-col pt-8 text-center text-xs font-bold text-og-gray-100 lg:hidden">
         {'©2024'}
         <br />
