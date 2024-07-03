@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
 import { navigation } from '@/misc/data'
+import { scrollToElement } from '@/misc/utils/scrollToElement'
 
 export const MobileNavbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -27,6 +28,7 @@ export const MobileNavbar = () => {
           }}
           animate={isOpen ? 'open' : 'closed'}
           className="h-full w-full"
+          id="mobileNavButton"
         >
           <motion.span
             className="absolute left-[25%] top-[40%] h-[2px] w-6 bg-og-text"
@@ -104,8 +106,9 @@ export const MobileNavbar = () => {
               return (
                 <div className="flex flex-col" key={navItem.name}>
                   <Link
-                    onClick={() => {
+                    onClick={(e) => {
                       setIsOpen(!isOpen)
+                      scrollToElement(e, navItem.direction)
                     }}
                     href={navItem.direction}
                     className={

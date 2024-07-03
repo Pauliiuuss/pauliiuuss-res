@@ -50,23 +50,23 @@ export const education: ExEdData[] = [
 export const navigation: NavigationItem[] = [
   {
     name: 'About me',
-    direction: '#about',
+    direction: 'about',
   },
   {
     name: 'Skills',
-    direction: '#skills',
+    direction: 'skills',
   },
   {
     name: 'Experience',
-    direction: '#ex',
+    direction: 'ex',
   },
   {
     name: 'Education',
-    direction: '#ed',
+    direction: 'ed',
   },
   {
     name: 'Contact',
-    direction: '#contact',
+    direction: 'contact',
   },
 ]
 

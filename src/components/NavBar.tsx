@@ -1,7 +1,10 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 
 import { navigation } from '@/misc/data'
+import { scrollToElement } from '@/misc/utils/scrollToElement'
 
 export const NavBar = () => {
   return (
@@ -12,6 +15,9 @@ export const NavBar = () => {
           return (
             <Link
               href={navItem.direction}
+              onClick={(e) => {
+                scrollToElement(e, navItem.direction)
+              }}
               className={
                 'relative text-og-text animation-buttonUnderline lg:text-xl 2xl:text-2xl'
               }
