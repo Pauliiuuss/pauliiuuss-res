@@ -11,7 +11,7 @@ import { skills } from '@/misc/data'
 export const Skills = ({ title, id }: { title: string; id: string }) => {
   return (
     <CollapsableCard title={title} id={id} key={id}>
-      <div className="flex flex-wrap gap-6">
+      <div className="flex flex-wrap justify-center gap-6">
         {skills.map((skill) => {
           return (
             <motion.div
@@ -37,7 +37,7 @@ export const Skills = ({ title, id }: { title: string; id: string }) => {
               <div className="relative h-10 w-10 2xl:h-12 2xl:w-12">
                 <Image src={`/icons/${skill.id}.svg`} alt={skill.id} fill />
               </div>
-              <p className="hidden text-xl 2xl:block 2xl:text-3xl">
+              <p className="pointer-events-none hidden text-xl xl:block 2xl:text-3xl">
                 {skill.name}
               </p>
             </motion.div>
