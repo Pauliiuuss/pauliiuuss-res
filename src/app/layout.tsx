@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import classNames from 'classnames'
 import type { Metadata } from 'next'
 import { Cairo } from 'next/font/google'
@@ -10,6 +11,10 @@ import './globals.css'
 const cairo = Cairo({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  icons: {
+    icon: '/icon.ico',
+    apple: '/apple-icon.png',
+  },
   title: 'Paulius Astrauskas',
   description: 'Paulius Astrauskas personal portfolio',
 }
@@ -26,6 +31,7 @@ export default function RootLayout({
       <body className={classNames(cairo.className, pageGrain)}>
         <ScrollToTheTop />
         {children}
+        <SpeedInsights />
       </body>
     </html>
   )
