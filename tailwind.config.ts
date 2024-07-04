@@ -28,6 +28,7 @@ const config: Config = {
       backgroundImage: {
         grain:
           'url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Image_gaussian_noise_example.png)',
+        background: "url('/background.svg')",
       },
       transitionProperty: {
         cursor: 'height, width, opacity',
