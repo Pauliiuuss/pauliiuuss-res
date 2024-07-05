@@ -18,7 +18,6 @@ export const ContactLinks = () => {
         <p className="text-og-text lg:text-xl">{'+37064378884'}</p>
       </div>
 
-      {/* SOCIAL MEDIA */}
       <div className="flex justify-center gap-8">
         <motion.div
           className="relative h-10 w-10 lg:h-12 lg:w-12"
@@ -48,6 +47,21 @@ export const ContactLinks = () => {
         >
           <Link href={'https://github.com/Pauliiuuss'}>
             <Image src={'/icons/github.svg'} alt={'github'} fill />
+          </Link>
+        </motion.div>
+        <motion.div
+          className="relative h-10 w-10 lg:h-12 lg:w-12"
+          whileHover={{
+            scale: [null, 1.1],
+            transition: {
+              duration: 0.2,
+              ease: 'easeInOut',
+              delay: 0,
+            },
+          }}
+        >
+          <Link href={'/pdf/cv.pdf'}>
+            <Image src={'/icons/cv.svg'} alt={'cv'} fill />
           </Link>
         </motion.div>
       </div>

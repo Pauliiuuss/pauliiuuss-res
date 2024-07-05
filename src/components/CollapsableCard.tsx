@@ -21,7 +21,7 @@ export const CollapsableCard = ({
         {title && (
           <>
             <motion.h2
-              className="px-6 py-4 text-4xl font-bold text-og-text lg:px-40 lg:py-12 lg:text-6xl 2xl:px-64 2xl:text-8xl"
+              className="px-6 py-6 text-4xl font-bold text-og-text lg:px-40 lg:py-12 lg:text-6xl 2xl:px-64 2xl:text-8xl"
               initial={{
                 opacity: 0,
                 x: -40,
