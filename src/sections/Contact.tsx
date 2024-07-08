@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import Link from 'next/link'
 
 import { Card } from '@/components/Card'
@@ -23,12 +22,11 @@ export const Contact = ({ id }: { id: string }) => {
         }}
         className="flex justify-center"
       >
-        <div className="lg:30 relative h-24 w-full animation-contactUnderline xl:h-40 2xl:h-52">
-          <Link
-            href={'mailto:paulius.astrauskas97@gmail.com'}
-            className="animation-contactUnderline"
-          >
-            <Image src="./contact.svg" alt="contact" fill />
+        <div className="flex h-full w-full justify-center">
+          <Link href={'mailto:paulius.astrauskas97@gmail.com'}>
+            <p className="relative text-5xl tracking-wider text-og-text animation-contactUnderline lg:text-8xl 2xl:text-[170px]">
+              {'CONTACT ME'}
+            </p>
           </Link>
         </div>
       </motion.div>

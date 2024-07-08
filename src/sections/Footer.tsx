@@ -23,13 +23,9 @@ export const Footer = () => {
         <br />
         {'PAULIUS ASTRAUSKAS'}
       </p>
-      <Image
-        height={250}
-        width={250}
-        alt="CPRGHT"
-        src={'/logo_pc.svg'}
-        className="hidden lg:block"
-      />
+      <div className="relative hidden h-[250px] w-[250px] lg:block">
+        <Image alt="CPRGHT" src={'/logo_pc.svg'} fill />
+      </div>
     </Card>
   )
 }
