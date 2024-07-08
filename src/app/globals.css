@@ -14,3 +14,8 @@ body.overflow-hidden {
   touch-action: none;
   -ms-touch-action: none;
 }
+
+body.overflow-y-hidden {
+  touch-action: none;
+  -ms-touch-action: none;
+}
