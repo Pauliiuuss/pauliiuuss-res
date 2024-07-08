@@ -26,7 +26,7 @@ export const Intro = () => {
           onAnimationComplete={() => {
             setShowAnimation(false)
           }}
-          className="bg-og-bg fixed left-0 top-0 z-[20] flex h-svh w-full items-center justify-center"
+          className="fixed left-0 top-0 z-[30] flex h-dvh w-full items-center justify-center bg-og-bg"
         >
           <AnimatedLogo />
         </motion.div>

@@ -13,14 +13,14 @@ export const MobileNavbar = () => {
 
   useEffect(() => {
     isOpen
-      ? document.body.classList.add('overflow-y-hidden')
-      : document.body.classList.remove('overflow-y-hidden')
+      ? document.body.classList.add('overflow-hidden')
+      : document.body.classList.remove('overflow-hidden')
   }, [isOpen])
 
   return (
     <div className="relative flex flex-col justify-between px-5 lg:hidden">
       <Image height={100} width={100} alt="Logo" src={'/logo.svg'} />
-      <div className="absolute right-5 top-5 z-[10] flex h-12 w-12">
+      <div className="absolute right-5 top-5 z-[20] flex h-12 w-12">
         {/*** ANIMATED HAMBURGER ***/}
         <motion.button
           onClick={() => {
@@ -81,7 +81,7 @@ export const MobileNavbar = () => {
 
       {isOpen && (
         <motion.div
-          className="absolute z-[5] flex h-12 w-12 rounded-full bg-og-blured-black backdrop-blur-lg"
+          className="fixed right-0 top-0 z-[15] flex h-12 w-12 rounded-full bg-og-blured-black backdrop-blur-lg"
           animate={isOpen ? 'open' : 'closed'}
           variants={{
             open: {

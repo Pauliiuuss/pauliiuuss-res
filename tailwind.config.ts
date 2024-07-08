@@ -23,11 +23,12 @@ const config: Config = {
         'og-blured-black': 'rgba(50, 50, 50, .2)',
       },
       screens: {
-        '2xl': '1921px',
+        '2xl': '1920px',
       },
       backgroundImage: {
         grain:
           'url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Image_gaussian_noise_example.png)',
+        background: "url('/background.png')",
       },
       transitionProperty: {
         cursor: 'height, width, opacity',
@@ -75,7 +76,7 @@ const config: Config = {
             position: 'absolute',
             width: '0%',
             left: '0px',
-            bottom: '-30px',
+            bottom: '-10px',
             transitionDuration: '700ms',
             letterSpacing: '1px',
           },

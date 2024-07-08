@@ -28,7 +28,10 @@ export default function RootLayout({
   const pageGrain =
     'before:content-[""] before:pointer-events-none before:fixed before:left-0 before:top-0 before:z-[100] before:h-full before:w-full before:bg-grain before:opacity-5'
   return (
-    <html lang="en" className="relative scroll-smooth bg-og-bg">
+    <html
+      lang="en"
+      className="relative scroll-smooth bg-background bg-cover bg-no-repeat"
+    >
       <body className={classNames(cairo.className, pageGrain)}>
         <ScrollToTheTop />
         {children}
