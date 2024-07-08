@@ -46,12 +46,6 @@ I am Paulius, a dedicated front-end developer with over 3 years of experience sp
 
 I believe in the power of clean, maintainable code and the importance of user-centric design. This project is a reflection of my commitment to building efficient, robust, and aesthetically pleasing web applications.
 
-## Additional Information
-
-Feel free to contribute to this project by opening issues or submitting pull requests. If you have any questions or need further assistance, don't hesitate to reach out.
-
-
-
-
+## ©2024 Paulius Astrauskas
 
 
