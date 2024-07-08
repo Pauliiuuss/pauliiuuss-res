@@ -9,8 +9,8 @@ export const Intro = () => {
   const [showAnimation, setShowAnimation] = useState<boolean>(true)
   useEffect(() => {
     showAnimation
-      ? document.body.classList.add('overflow-y-hidden')
-      : document.body.classList.remove('overflow-y-hidden')
+      ? document.body.classList.add('overflow-y-hidden', 'touch-action-none')
+      : document.body.classList.remove('overflow-y-hidden', 'touch-action-none')
   }, [showAnimation])
 
   return (
@@ -26,7 +26,7 @@ export const Intro = () => {
           onAnimationComplete={() => {
             setShowAnimation(false)
           }}
-          className="bg-og-bg fixed left-0 top-0 z-[20] flex h-svh w-full items-center justify-center"
+          className="fixed left-0 top-0 z-[20] flex h-svh w-full items-center justify-center bg-og-bg"
         >
           <AnimatedLogo />
         </motion.div>
