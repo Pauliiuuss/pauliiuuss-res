@@ -13,8 +13,6 @@ export const Intro = () => {
       : document.body.classList.remove('overflow-y-hidden')
   }, [showAnimation])
 
-  console.log(showAnimation)
-
   return (
     <>
       {showAnimation && (
