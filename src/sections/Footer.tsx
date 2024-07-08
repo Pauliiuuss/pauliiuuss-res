@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <Card
       sx={
-        'flex-col lg:flex-row lg:justify-between items-center border-t-[1px] border-og-gray-200 bg-og-blured-black backdrop-blur-lg lg:gap-0 py-8 lg:py-16 shadow-[0px_-10px_20px_rgba(0,0,0,.4)]'
+        'flex-col lg:flex-row lg:justify-between items-center bg-og-blured-black backdrop-blur-lg lg:gap-0 py-8 lg:py-16 shadow-[0px_-10px_20px_rgba(0,0,0,.4)]'
       }
     >
       <Image
