@@ -9,3 +9,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+body.overflow-hidden {
+  touch-action: none;
+  -ms-touch-action: none;
+}
