@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Pauliiuuss Portfolio
 
-## Getting Started
+This is a single-page portfolio website that showcases all the necessary information about my professional experience and skills, similar to a CV. The website is designed to be dynamic and responsive, ensuring a seamless user experience across different devices. It serves as a digital resume for potential employers and collaborators.
 
-First, run the development server:
+## Tools Used
+
+This project is built with:
+
+- Next.js
+
+- TypeScript
+  
+- Framer Motion
+
+- pnpm
+  
+- Aeternity
+
+- ESLint
+
+- Vercel
+
+- Prettier
+
+
+## Launching Locally
+To run this project locally, firstly clone the repository and then follow these steps:
+
+Install Dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm i
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Start the Development Server:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Open your browser and navigate to (http://localhost:3000).
 
-## Learn More
+## About Me
 
-To learn more about Next.js, take a look at the following resources:
+I am Paulius, a dedicated front-end developer with over 3 years of experience specializing in React web development. I have honed my skills in creating dynamic and responsive web applications, ensuring a seamless user experience. I am highly adaptable and thrive in both team-oriented and individual work environments, consistently delivering high-quality results and meeting project deadlines. My passion for continuous learning and improvement drives me to stay updated with the latest industry trends and technologies.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I believe in the power of clean, maintainable code and the importance of user-centric design. This project is a reflection of my commitment to building efficient, robust, and aesthetically pleasing web applications.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Additional Information
 
-## Deploy on Vercel
+Feel free to contribute to this project by opening issues or submitting pull requests. If you have any questions or need further assistance, don't hesitate to reach out.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+
