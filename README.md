@@ -14,7 +14,7 @@ This project is built with:
 
 - pnpm
   
-- Aeternity
+- Aceternity
 
 - ESLint
 
