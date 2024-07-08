@@ -23,12 +23,14 @@ export const Contact = ({ id }: { id: string }) => {
         }}
         className="flex justify-center"
       >
-        <Link
-          className="animation-contactUnderline relative h-fit lg:w-[60%]"
-          href={'mailto:paulius.astrauskas97@gmail.com'}
-        >
-          <Image src="./contact.svg" alt="contact" height={9999} width={9999} />
-        </Link>
+        <div className="lg:30 relative h-24 w-full animation-contactUnderline xl:h-40 2xl:h-52">
+          <Link
+            href={'mailto:paulius.astrauskas97@gmail.com'}
+            className="animation-contactUnderline"
+          >
+            <Image src="./contact.svg" alt="contact" fill />
+          </Link>
+        </div>
       </motion.div>
       <motion.div
         className="mt-12 flex h-full flex-col gap-8 lg:mt-32 lg:gap-12"

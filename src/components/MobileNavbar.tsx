@@ -13,8 +13,8 @@ export const MobileNavbar = () => {
 
   useEffect(() => {
     isOpen
-      ? document.body.classList.add('overflow-y-hidden')
-      : document.body.classList.remove('overflow-y-hidden')
+      ? document.body.classList.add('overflow-hidden')
+      : document.body.classList.remove('overflow-hidden')
   }, [isOpen])
 
   return (

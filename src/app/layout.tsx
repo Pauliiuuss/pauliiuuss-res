@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="bg-background relative scroll-smooth bg-cover bg-center bg-no-repeat"
+      className="relative scroll-smooth bg-background bg-cover bg-no-repeat"
     >
       <body className={classNames(cairo.className, pageGrain)}>
         <ScrollToTheTop />
